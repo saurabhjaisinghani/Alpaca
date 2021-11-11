@@ -1,4 +1,4 @@
 # Alpaca
 Alpaca Image editor
 Project from codementor.io
-Code Author :- Kosindu
+Code Author :- Kosindu Nuwan Kasthuri
