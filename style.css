@@ -1,0 +1,111 @@
+* {
+  margin :0;
+  padding :0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgba(108, 44, 114, 0.8);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h1 span {
+  color : #fff;
+}
+
+button {
+  display : inline;
+  background-color : rgba(255, 255, 255, 0);
+  padding :0.6rem;
+  border : 2px solid #fff;
+  border-radius : 15px;
+  color : #fff;
+  margin : 5px;
+  cursor : pointer;
+  text-transform : capitalize;
+  transition : all 0.2s ease-in-out;
+}
+
+button:hover,
+button.active {
+  background-color:#fff;
+  color: rgba (108, 44, 114, 0.8);
+}
+
+.separate-line {
+  width: 100%;
+  background-color : #000;
+  heigth: 2px;
+  border-radius: 1px;
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding : 60px 20px;
+  display : grid;
+  grid-template-areas:
+    'header header'
+    'image-wrap-box button-wrap';
+  grid-gap: 3rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.image-wrap-box {
+  grid-area : image-wrap-box;
+  display : flex;
+  flex-direction : column;
+}
+
+.image-wrap {
+  width: 360px;
+  height: 360px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  position : absolute;
+}
+
+.button-wrap {
+  grid-area : button-wrap;
+}
+
+.main-buttons h2,
+.sub-buttons h2 {
+  margin-bottom: 1rem;
+}
+
+#sub-button-heading {
+  text-transform: capitalize;
+}
+
+@media (max-width: 540px) {
+  .container {
+    grid-template-areas:
+      'header'
+      'image-wrap-box'
+      'button-wrap';
+  }
+  
+  .image-wrap {
+    width: auto;
+  }
+}
