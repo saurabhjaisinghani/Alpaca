@@ -20,6 +20,11 @@ class UI {
   }
   
   showSubCategories = (mainCategory, index) => {
-    const subCategories = 
+    const subCategories = mainItemsArray[index];
+    subCategories.forEach(subCategory => {
+      const subCategoryWrap = document.querySelector('.sub-button-collection');
+      subCategoryWrap.appendChild(this.createButtonWrap('sub', subCategory));
+    });
   }
+  
 }
