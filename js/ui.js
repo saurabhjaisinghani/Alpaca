@@ -27,4 +27,14 @@ class UI {
     });
   }
   
+  clearSubCategories = () => {
+    const subCategoryWrap = document.querySelector('.sub-button-collection');
+    subCategoryWrap.innerHTML = '';
+  };
+  
+  createButtonWrap = (type, innerText) => {
+    const button = document.createElement("button");
+    button.className = `${type}-button`;
+    button.innerText= innerText)
+  }
 }
