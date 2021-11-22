@@ -35,6 +35,20 @@ class UI {
   createButtonWrap = (type, innerText) => {
     const button = document.createElement("button");
     button.className = `${type}-button`;
-    button.innerText= innerText)
+    button.innerText= innerText;
+    return button;
+  };
+  
+  changeImage = (mainCategory, image) => {
+    const imageLink = `./img/${mainCategory}/${image}.png`;
+    const toChangeImage = document.getElementById(mainCategory);
+    toChangeImage.innerHTML = `<img src = "${imageLink}" alt="" />`;
+  };
+  
+  getImageNodeArray() {
+    const imageWrapperItems = document.querySelectorAll('.image-wrap-items');
+    const imageNodeArray = [];
+    
+    imageWrapperItems.forEach((image))
   }
 }
