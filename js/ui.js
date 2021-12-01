@@ -49,6 +49,8 @@ class UI {
     const imageWrapperItems = document.querySelectorAll('.image-wrap-items');
     const imageNodeArray = [];
     
-    imageWrapperItems.forEach((image))
+    imageWrapperItems.forEach((imageWrapperItem, index) => {
+      imageNodeArray.push(imageWrapperItem.id)
+    })
   }
 }
